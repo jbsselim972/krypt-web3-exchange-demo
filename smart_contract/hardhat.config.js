@@ -5,7 +5,7 @@ module.exports = {
   solidity: "0.8.0",
   networks: {
     ropsten: {
-      url: "https://eth-ropsten.alchemyapi.io/v2/L9B90sYGRSbkWrBF0Hlxh_B2qSwI2mQc",
+      url: process.env.ALCHEMY_URL,
       accounts: [process.env.PRIVATE_KEY],
     },
   },
